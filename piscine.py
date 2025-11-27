@@ -1,4 +1,5 @@
-#
+#   Commentaires d'en-tête
+#   Test fusion
 #   Projet de développement Python 
 #   Gestionnaire d'utilisateurs d'une piscine 
 #
@@ -26,5 +27,14 @@ while commande != 'exit':
     if commande == 'liste':
         for elt in liste:
             print(f"Prénom {elt[0]}, nage {elt[1]}, longueur {elt[2]}")
+            print("fin")
 
-# Fin du programme
+    if commande == 'nage':
+        n=input("Quelle nage ?")
+        for elt in liste:
+            if elt[1] == n:
+                print(f"Prénom:{elt[0]}")
+    print("fin")
+
+        #test
+        #new 
