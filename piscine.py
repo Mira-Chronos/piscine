@@ -27,7 +27,7 @@ while commande != 'exit':
         n=input("Quelle nage ?")
         for elt in liste:
             if elt[1] == n:
-                print(f"Prénom:{elt[0]}")
+                print(f"Prénom:{elt[0]},longueur {elt[2]},Date {elt[3]}")
 
     if commande == 'nageur':
         na = input("Qui?")
