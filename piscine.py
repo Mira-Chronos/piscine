@@ -1,4 +1,5 @@
 #   Commentaires d'en-tête
+#   Test fusion
 #   Projet de développement Python 
 #   Gestionnaire d'utilisateurs d'une piscine 
 #
