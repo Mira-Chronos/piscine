@@ -24,4 +24,4 @@ while commande != 'exit':
             print("fin")
 
         #test
-        #new york
+        #new 
