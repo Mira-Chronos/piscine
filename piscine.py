@@ -1,4 +1,4 @@
-#
+#   Test fusion
 #   Projet de développement Python 
 #   Gestionnaire d'utilisateurs d'une piscine 
 #
