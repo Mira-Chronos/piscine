@@ -31,9 +31,9 @@ while commande != 'exit':
 
     if commande == 'nageur':
         na = input("Qui?")
-        for elt in liste:
-            if elt[0] == na:
-                print(f"Nage: {elt[1]}")
+        for personne, nage, longueur, date in liste:
+            if personne == na:
+                print(f"Nage: {nage}, longueur: {longueur}, Date: {date}")
 
     if commande == 'date':
         da=input("Quelle date?")
