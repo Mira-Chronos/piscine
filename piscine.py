@@ -27,16 +27,16 @@ while commande != 'exit':
         n=input("Quelle nage ?")
         for personne, nage, longueur, date in liste:
             if nage == n:
-                print(f"Prénom:{personne},longueur {longueur},Date {date}")
+                print(f"Prénom {personne},longueur {longueur},Date {date}")
 
     if commande == 'nageur':
         na = input("Qui?")
         for personne, nage, longueur, date in liste:
             if personne == na:
-                print(f"Nage: {nage}, longueur: {longueur}, Date: {date}")
+                print(f"Nage {nage},longueur {longueur},Date {date}")
 
     if commande == 'date':
         da=input("Quelle date?")
-        for elt in list:
-            if elt[3] == da:
-                print(f"Prénom {elt[0]},nage {elt[1]},")
+        for personne, nage, longueur, date in list:
+            if date == da:
+                print(f"Prénom {personne},nage {nage},longueur {longueur}")
