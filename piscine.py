@@ -42,7 +42,7 @@ while commande != 'exit':
 
     if commande == 'date':
         da=input("Quelle date?")
-        for personne, nage, longueur, date in list:
+        for personne, nage, longueur, date in liste:
             if date == da:
                 print(f"Prénom {personne},nage {nage},longueur {longueur}")
 
