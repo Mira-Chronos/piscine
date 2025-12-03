@@ -24,8 +24,12 @@ while commande != 'exit':
     commande = input("Que faut-il faire ? ")
 
     if commande == 'ajout':
-        personne = input("Qui nage ? ")
-        nage = input("quelle nage ? ")
+        for id, nageur in enumerate(liste_nageurs):
+            print(f"{id}->{nageur}")
+        personne = int(input("Qui nage ? "))
+        for id, nage in enumerate(liste_nages):
+            print(f"{id}->{nage}")
+        nage = int(input("quelle nage ? "))
         longueur = input("combien de longueur ? ")
         date = input("Quel jour ? YY_MM_DD")
         liste_bdd.append((personne,nage,longueur,date))
