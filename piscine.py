@@ -68,3 +68,4 @@ while commande != 'exit':
                     longueur = int(longueur_str) 
                     
                     print(f"Prénom: {prenom}, Nom: {nom}, Longueur: {longueur}, Date: {date}")
+                    liste.append((prenom,nom,longueur,date))
