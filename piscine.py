@@ -57,6 +57,7 @@ while commande != 'exit':
         print(f"Liste sauvegardée ! dans '{nom_fichier}'.")
 
     if commande == 'load':
+        liste.clear()
         with open(nom_fichier, 'r', encoding='utf-8') as fichier:
             for ligne in fichier:
                 ligne = ligne.strip()
