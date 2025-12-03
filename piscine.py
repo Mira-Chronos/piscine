@@ -6,12 +6,12 @@
 
 print("--- Gestionnaire d'utilisateurs d'une piscine ---")
 
-liste = ["Léa,brasse,15,25-11-24"
-        "Pierre,brasse,9,25-11-24"
-        "Michel,crawl,8,25-11-26"
-        "Léa,crawl,10,25-11-25"
-        "Pierre,Dos,9,25-11-26"
-        "Michel,Brasse,9,25-11-26"]
+liste = [("Léa","brasse",15,"25-11-24"),
+        ("Pierre","brasse",9,"25-11-24"),
+        ("Michel","crawl",8,"25-11-26"),
+        ("Léa","crawl",10,"25-11-25"),
+        ("Pierre","Dos",9,"25-11-26"),
+        ("Michel","Brasse",9,"25-11-26")]
 commande = ''
 
 while commande != 'exit':
@@ -52,6 +52,20 @@ while commande != 'exit':
         for elt in liste:
             with open(nom_fichier, 'w') as f:
                     for mon_tuple in liste:
-                        donnees_a_ecrire = str(mon_tuple)
+                        donnees_a_ecrire = str(mon_tuple) 
+                        donnees_a_ecrire +='\n'
                         f.write(donnees_a_ecrire)
             print(f"✅ Tuple sauvegardé dans le fichier '{nom_fichier}'.")
+
+    if commande == 'load':
+        with open(nom_fichier, 'r', encoding='utf-8') as fichier:
+            for ligne in nom_fichier:
+                ligne = ligne.strip()
+                
+                if ligne:
+                    valeurs = [v.strip() for v in ligne.split(',')]
+                    
+                    prenom, nom, longueur_str, date = valeurs
+                    longueur = int(longueur_str) 
+                    
+                    print(f"Prénom: {prenom}, Nom: {nom}, Longueur: {longueur}, Date: {date}")
